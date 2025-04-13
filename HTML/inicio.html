@@ -80,10 +80,10 @@
                             <a href="https://facebook.com" target="_blank" class="a-modal-icon">
                                 <i class="bi bi-facebook icono"></i>
                             </a>
-                            <a href="https://google.com" target="_blank" class="a-modal-icon">
+                            <a href="https://acortar.link/wGcBVI" target="_blank" class="a-modal-icon">
                                 <i class="bi bi-google icono"></i>
                             </a>
-                            <a href="https://microsoft.com" target="_blank" class="a-modal-icon">
+                            <a href="https://acortar.link/HKdgS2" target="_blank" class="a-modal-icon">
                                 <i class="bi bi-microsoft icono"></i>
                             </a>
                         </figure>
@@ -106,39 +106,66 @@
     <!-- Modal de Registro -->
     <div class="modal fade" id="modalRegistrar" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content border-0 bg-light modal-redondeado">
-
+            <div class="modal-content border-0 bg-white modal-redondeado">
                 <div class="card-body p-5">
                     <!-- Logo -->
                     <img src="../Recursos/Img/LogoSolo.png" alt="Logo" class="img-fluid d-block mx-auto mb-3"
-                        style="width: 70px;">
-
+                        style="width: 55px;">
+                    
                     <!-- Título -->
-                    <h2 class="text-center mb-4 fw-bold titulo-modal ">Te damos la bienvenida a Vexa</h2>
-
-                    <!-- Formulario -->
-                    <form>
-                        <div class="mb-4">
-                            <label for="email" class="form-label">Correo Electrónico</label>
+                    <h2 class="text-center mb-2 titulo-modal">Crea tu cuenta en Vexa</h2>
+                    
+                    <!-- Formulario de registro -->
+                    <form class="me-5 ms-5 p-3">
+                        <div class="mb-2">
+                            <label for="username" class="form-label label-modal">Nombre de Usuario</label>
+                            <input type="text" class="form-control" id="username" placeholder="Nombre de usuario" required>
+                        </div>
+                        <div class="mb-2">
+                            <label for="email" class="form-label label-modal">Correo Electrónico</label>
                             <input type="email" class="form-control" id="email" placeholder="Correo" required>
                         </div>
-                        <div class="mb-4">
-                            <label for="password" class="form-label">Contraseña</label>
+                        <div class="mb-2">
+                            <label for="password" class="form-label label-modal">Contraseña</label>
                             <input type="password" class="form-control" id="password" placeholder="Contraseña" required>
                         </div>
-                        <button class="btn-modal btn-lg w-100" type="submit">Iniciar Sesión</button>
+                        <!-- Botón de registro -->
+                        <button class="btn-modal btn-lg w-100" type="submit">Registrarse</button>
+    
+                        <p class="text-center mt-2 mb-0 fw-bold">O</p>
+    
+                        <!-- Botones de redes sociales -->
+                        <figure class="d-flex justify-content-center gap-3 mt-2 mb-0">
+                            <a href="https://facebook.com" target="_blank" class="a-modal-icon">
+                                <i class="bi bi-facebook icono"></i>
+                            </a>
+                            <a href="https://acortar.link/wGcBVI" target="_blank" class="a-modal-icon">
+                                <i class="bi bi-google icono"></i>
+                            </a>
+                            <a href="https://acortar.link/HKdgS2" target="_blank" class="a-modal-icon">
+                                <i class="bi bi-microsoft icono"></i>
+                            </a>
+                        </figure>
                     </form>
-
+    
+                    <!-- Condiciones -->
+                    <p class="text-center mt-0 mb-0 me-3 ms-3 p-2 condiciones">
+                        Si continúas, indicas que aceptas las 
+                        <a href="#" target="_blank" class="a-modal">Condiciones de servicio</a> de Vexa y reconoces que
+                        leíste nuestra <a href="#" target="_blank" class="a-modal">Política de privacidad</a>. 
+                        <a href="#" target="_blank" class="a-modal">Aviso de recopilación de información.</a>
+                    </p>
+    
                     <!-- Enlace inferior -->
-                    <p class="text-center mt-4 mb-0">
-                        ¿No tienes una cuenta?
-                        <a href="#" class="text-primary fw-bold" data-bs-toggle="modal" data-bs-target="#modalRegister"
-                            data-bs-dismiss="modal">Regístrate</a>
+                    <p class="text-center mt-3 mb-0">
+                        <a href="#" class="text-black fw-bold text-decoration-none condiciones" data-bs-toggle="modal" data-bs-target="#modalLogin"
+                            data-bs-dismiss="modal">¿Ya tienes una cuenta? Inicia sesión</a>
                     </p>
                 </div>
             </div>
         </div>
     </div>
+    
 
     <!-- Main Content -->
     <main class="main d-flex flex-column align-items-center justify-content-center">
