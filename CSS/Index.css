@@ -4,12 +4,38 @@
 }
 
 body {
-  font-family: 'Fuente General', sans-serif;
+  font-family: 'Neue Haas Grotesk Text', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: #FFFFFF;
 }
 
-.fondo {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.774), rgba(0, 0, 0, 0.301)), url(../Recursos/Img/Fondo.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
+h1 {
+  font-weight: 600;
+  color: #255799;
+}
+
+.navbar-vertical {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 100%;
+  background-color:#eeeeee;
+  border-right: 1px solid #d1d1d1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.navbar-contenedor {
+  background-color: rgba(255, 255, 255, 0.164);
+  height: 50px;
+  width: 50px;
+  border-radius: 25%;
+  margin-bottom: 30%;
+}
+
+.navbar-contenedor:hover {
+  background-color: rgba(255, 255, 255, 0.63);
+  cursor: pointer;
+}
