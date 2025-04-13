@@ -151,9 +151,16 @@ h1 {
     padding: 20px;
 }
 
+.label-modal {
+    font-size: 16px;
+    margin-bottom: 0%;
+    margin-left: 3%;
+}
+
 .form-control {
     height: 50px;
     border-radius: 15px;
+    font-size: 18px;
 }
 
 .form-control:hover {
@@ -171,9 +178,34 @@ h1 {
     font-weight: bold;
     background-color: #478971;
     color: #FFFFFF;
-    padding: 15px 15px;
+    padding: 10px 15px;
     font-size: 16px;
     text-decoration: none;  
     border-radius: 25px;
     border: none;
 }
+
+.btn-modal:hover {
+    background-color: rgba(71, 137, 113, 0.918);
+    text-decoration: none;
+}
+
+.a-modal{
+    text-decoration: underline;
+    color: #6e6e6e;
+}
+
+.a-modal:hover{
+    text-decoration: none;
+    color: #6e6e6e;
+}
+
+.icono {
+    color: #2C69B8;
+    font-size: 30px;
+  }
+
+.a-modal-icon:hover .icono {
+    color: #1a4a85; /* un tono más oscuro al pasar el mouse */
+}
+  
