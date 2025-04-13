@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'Fuente General';
+  src: url('../Recursos/Fuentes/qualera.otf') format('opentype');
+}
+
+body {
+  font-family: 'Fuente General', sans-serif;
+}
+
+.fondo {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.774), rgba(0, 0, 0, 0.301)), url(../Recursos/Img/Fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
