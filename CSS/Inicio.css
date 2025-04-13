@@ -135,7 +135,7 @@ h1 {
 /*---------Modales-----------*/
 .modal-redondeado {
     background-color: #C9C9CB;
-    border-radius: 7%;
+    border-radius: 30px;
     overflow: hidden;
 }
 
