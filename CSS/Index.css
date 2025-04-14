@@ -39,3 +39,196 @@ h1 {
   background-color: rgba(255, 255, 255, 0.63);
   cursor: pointer;
 }
+
+.navbar-icono{
+  font-size: 22px;
+}
+
+.badge-hover {
+  position: absolute;
+  top: center;
+  left: 100%;
+  margin-left: -5px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  pointer-events: none;
+}
+
+.navbar-contenedor {
+  position: relative; 
+}
+
+.navbar-contenedor:hover .badge-hover {
+  opacity: 1;
+}
+
+/*-----Barra de busqueda-----*/
+
+.barra-busqueda {
+  border-radius: 15px;
+  position: fixed;
+  top: 15px;
+  left: 100px;
+  right: 100px;
+  background-color: #E1E1E1;
+  z-index: 1050;
+}
+
+.input-busqueda {
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  width: 100%;
+  font-size: 16px;
+  background-color: #E1E1E1;
+}
+
+.icono-lupa {
+  font-size: 20px;
+}
+
+.input-busqueda:focus-within {
+  background-color: #ffffff4d;
+  border: 0px;
+  box-shadow: none;
+}
+
+/*-----Perfil-----*/
+.perfil {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  width: auto;
+  height: 46px;
+  background-color: transparent;
+  z-index: 1060;
+  display: flex;
+  justify-content: center;
+}
+
+.img-perfil {
+  width: 35px;
+  height: 35px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.menu-contenedor {
+  width: 320px;
+  border-radius: 15px;
+  overflow: hidden;
+  z-index: 999;
+}
+
+.img-perfil-mini {
+  width: 65px;
+  height: 65px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+
+.opcion-menu {
+  padding: 8px 0;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.opcion-menu:hover {
+  text-decoration: underline;
+}
+
+#menuPerfil {
+  position: absolute; 
+  top: 75%; 
+  right: 250px; 
+  width: 100%;
+}
+
+
+/**-----Modo oscuro-----*/
+
+body.modo-oscuro {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.modo-oscuro .navbar-vertical {
+  background-color: #1e1e1e;
+  border-right: 1px solid #444;
+}
+
+body.modo-oscuro .navbar-logo{
+  background-color: #ffffffb2 !important;
+}
+
+body.modo-oscuro .navbar-logo:hover{
+  background-color: #ffffffd2 !important;
+}
+
+body.modo-oscuro .text-muted {
+  color: #b0b0b0 !important; /* texto claro */
+}
+
+body.modo-oscuro .navbar-contenedor {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+body.modo-oscuro .navbar-contenedor:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+body.modo-oscuro .barra-busqueda {
+  background-color: #2c2c2c;
+}
+
+body.modo-oscuro .input-busqueda {
+  background-color: #2c2c2c;
+  color: white;
+}
+
+body.modo-oscuro .input-busqueda::placeholder {
+  color: #c2c2c2; /* Color del placeholder en modo oscuro */
+  opacity: 1; /* Asegura que el color blanco sea visible */
+}
+
+body.modo-oscuro .input-busqueda:focus-within {
+  background-color: #444;
+}
+
+body.modo-oscuro .card {
+  background-color: #2c2c2c;
+  color: white;
+}
+
+
+/* Ocultar menú completo en móviles hasta que el usuario haga clic */
+@media (max-width: 991px) {
+  .navbar-vertical {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 15px;
+    border-right: none;
+    border-bottom: 1px solid #d1d1d1;
+  }
+
+  .navbar-contenedor {
+    margin-bottom: 0;
+  }
+
+  .badge-hover {
+    display: none;
+  }
+  
+  .barra-busqueda {
+    top: 80px;
+    left: 15px;
+    right: 15px;
+    border-radius: 15px;
+    background-color: #E1E1E1;
+  }
+
+}

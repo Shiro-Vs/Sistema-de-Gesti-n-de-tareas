@@ -14,22 +14,115 @@
 <body>
 
     <nav class="navbar-vertical">
-        
-        <div class="navbar-contenedor d-flex justify-content-center align-items-center" style="border-radius: 50%;">
+
+        <div class="navbar-contenedor navbar-logo d-flex justify-content-center align-items-center"
+            style="border-radius: 50%;">
             <a class="navbar-brand p-2" href="#">
                 <img src="../Recursos/Img/LogoSolo.png" alt="Logo" class="logo-navbar" style="width: 30px;">
+            </a>
+            <span class="badge badge-hover bg-dark">Vexa</span>
+        </div>
+
+        <div class="navbar-contenedor d-flex justify-content-center align-items-center">
+            <a class="navbar-brand p-2" href="#">
+                <i class="bi bi-house-door-fill navbar-icono"></i>
+                <span class="badge badge-hover bg-dark">Inicio</span>
             </a>
         </div>
 
         <div class="navbar-contenedor d-flex justify-content-center align-items-center">
             <a class="navbar-brand p-2" href="#">
-                <img src="../Recursos/Img/LogoSolo.png" alt="Logo" class="logo-navbar" style="width: 30px;">
+                <i class="bi bi-alarm-fill navbar-icono"></i>
+                <span class="badge badge-hover bg-dark">Pendientes</span>
+            </a>
+        </div>
+
+        <div class="navbar-contenedor d-flex justify-content-center align-items-center">
+            <a class="navbar-brand p-2" href="#">
+                <i class="bi bi-clipboard-check-fill navbar-icono"></i>
+                <span class="badge badge-hover bg-dark">Completados</span>
+            </a>
+        </div>
+
+        <div class="navbar-contenedor d-flex justify-content-center align-items-center">
+            <a class="navbar-brand p-2" href="#">
+                <i class="bi bi-tags-fill navbar-icono"></i>
+                <span class="badge badge-hover bg-dark">Etiquetas</span>
+            </a>
+        </div>
+
+        <div class="navbar-contenedor d-flex justify-content-center align-items-center">
+            <a class="navbar-brand p-2" href="#">
+                <i class="bi bi-bar-chart-fill navbar-icono"></i>
+                <span class="badge badge-hover bg-dark">Estadísticas</span>
+            </a>
+        </div>
+
+        <div class="navbar-contenedor d-flex justify-content-center align-items-center">
+            <a class="navbar-brand p-2" href="#">
+                <i class="bi bi-bell-fill navbar-icono"></i>
+                <span class="badge badge-hover bg-dark">Notificaciones</span>
             </a>
         </div>
 
     </nav>
 
+    <!-- Barra de busqueda -->
+    <div class="barra-busqueda d-flex align-items-center px-3 py-2 shadow-sm">
+        <i class="bi bi-search-heart me-2 icono-lupa "></i>
+        <input type="text" class="form-control input-busqueda" placeholder="Buscar...">
+    </div>
 
+    <!-- Perfil con menú tipo Pinterest -->
+    <div class="perfil position-fixed end-0 p-3">
+        <div class="d-flex align-items-center" data-bs-toggle="collapse" data-bs-target="#menuPerfil"
+            style="cursor: pointer;">
+            <img src="../Recursos/Img/perfil.png" alt="Perfil" class="img-perfil">
+            <i class="bi bi-caret-down-fill ms-2"></i>
+        </div>
+
+        <div id="menuPerfil" class="collapse mt-5">
+            <div class="card shadow menu-contenedor">
+                <div class="p-3">
+                    <small class="text-muted">Perfil de: </small>
+                    <div class="d-flex align-items-center rounded p-1 mt-1" style="max-width: 300px;">
+                        <img src="../Recursos/Img/perfil.png" class="img-perfil-mini me-2">
+                        <div class="flex-grow-1 min-w-0">
+                            <strong>Robert Vs</strong><br>
+                            <small class="text-muted">Personal</small><br>
+                            <small class="text-muted text-truncate d-block" style="max-width: 180px;">
+                                robert.vasquez.2001@gmail.casdasdasdasdsaom
+                            </small>
+                        </div>
+                        <i class="bi bi-check2 ms-auto text-dark"></i>
+                    </div>
+
+                </div>
+                <hr class="my-1">
+                <div class="p-3">
+                    <div class="opcion-menu"> Editar perfil</div>
+                    <small class="text-muted">Tus cuentas</small>
+                    <div class="opcion-menu" id="btnModoOscuro">Modo oscuro</div>
+                    <div class="opcion-menu text-danger">Salir</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+
+    <script>
+        const btnModoOscuro = document.getElementById('btnModoOscuro');
+
+        btnModoOscuro.addEventListener('click', () => {
+            document.body.classList.toggle('modo-oscuro');
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
