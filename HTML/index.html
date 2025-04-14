@@ -110,9 +110,133 @@
     </div>
     </div>
 
+    <!-- Tabla de Tareas -->
+    <div class="container-tabla">
+        <h2 class="mb-3 titulo">Listado de Tareas</h2>
+        <div class="table-responsive">
+            <table class="table table-hover align-middle text-center ">
+                <thead class="table-responsive">
+                    <tr>
+                        <th>Cod</th>
+                        <th>Título</th>
+                        <th>Descripción</th>
+                        <th>Etiqueta</th>
+                        <th>Estado</th>
+                        <th>Prioridad</th>
+                        <th>Fecha Límite</th>
+                        <th>Fecha Creación</th>
+                        <th>Check List</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody class="table-responsive">
+                    <tr>
+                        <td>001</td>
+                        <td>Diseño página</td>
+                        <td>Maquetar la sección principal</td>
+                        <td>Frontend</td>
+                        <td>Pendiente</td>
+                        <td>Alta</td>
+                        <td>2025-04-20</td>
+                        <td>2025-04-10</td>
+                        <td>
+                            <input class="form-check-input" type="checkbox">
+                        </td>
+                        <td class="td-acciones">
+                            <div class="d-flex justify-content-center gap-2 p-2">
+                              <button class="btn btn-sm btn-editar">
+                                <i class="bi bi-pen-fill"></i>
+                              </button>
+                              <button class="btn btn-sm btn-eliminar">
+                                <i class="bi bi-trash-fill"></i>
+                              </button>
+                            </div>
+                          </td>
+                          
+                    </tr>
+                    <!-- Puedes agregar más filas aquí -->
+                    </tr>
 
+                </tbody>
+            </table>
+        </div>
+    </div>
 
+    <!-- Botón nueva tarea redondo con solo ícono -->
+    <div class="boton-nueva-tarea position-fixed bottom-0 end-0 p-4">
+        <button class="btn-nueva-tarea" data-bs-toggle="modal" data-bs-target="#modalNuevaTarea">
+            <i class="bi bi-plus-circle-fill fs-3"></i>
+        </button>
+    </div>
 
+        <!-- Modal de Nueva Tarea -->
+<div class="modal fade" id="modalNuevaTarea" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content border-0 modal-redondeado">
+        <div class="card-body p-5">
+  
+          <!-- Sección de bienvenida centrada en la parte superior -->
+          <div class="text-center mb-4">
+            <img src="../Recursos/Img/LogoSolo.png" alt="Logo" class="img-fluid mb-3" style="width: 70px;">
+            <h2 class="titulo-modal mb-2">Ingresar Nueva Tarea</h2>
+            <p class="mb-0">Completa los datos para agregar una nueva tarea</p>
+          </div>
+  
+          <!-- Cuestionario en 2 columnas -->
+          <div class="row">
+            <!-- Columna Izquierda (Formulario de datos) -->
+            <div class="col-md-6 mb-3">
+              <form class="p-2">
+                
+                <div class="mb-2">
+                  <label for="titulo" class="form-label label-modal">Título</label>
+                  <input type="text" class="form-control" id="titulo" placeholder="Título de la tarea" required>
+                </div>
+                <div class="mb-2">
+                  <label for="descripcion" class="form-label label-modal">Descripción</label>
+                  <textarea class="form-control" id="descripcion" placeholder="Descripción de la tarea" required></textarea>
+                </div>
+                <div class="mb-2">
+                  <label for="etiqueta" class="form-label label-modal">Etiqueta</label>
+                  <input type="text" class="form-control" id="etiqueta" placeholder="Etiqueta de la tarea" required>
+                </div>
+              </form>
+            </div>
+  
+            <!-- Columna Derecha (Formulario de opciones y fechas) -->
+            <div class="col-md-6 mb-3">
+              <form class="p-2">
+                
+                <div class="mb-2">
+                  <label for="prioridad" class="form-label label-modal">Prioridad</label>
+                  <select class="form-control" id="prioridad" required>
+                    <option value="baja">Baja</option>
+                    <option value="media">Media</option>
+                    <option value="alta">Alta</option>
+                  </select>
+                </div>
+                <div class="mb-2">
+                  <label for="fecha_limite" class="form-label label-modal">Fecha Límite</label>
+                  <input type="date" class="form-control" id="fecha_limite" required>
+                </div>
+                <div class="mb-2">
+                  <label for="fecha_creacion" class="form-label label-modal">Fecha de Creación</label>
+                  <input type="date" class="form-control" id="fecha_creacion" value="{{fecha_actual}}" disabled>
+                </div>
+              </form>
+            </div>
+          </div>
+  
+          <!-- Botones al final y centrados -->
+          <div class="d-flex justify-content-center gap-3 mt-4">
+            <button type="submit" class="btn-modal">Guardar</button>
+            <button type="button" class="btn-cancelar" data-bs-dismiss="modal">Cancelar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
 
 
     <script>
