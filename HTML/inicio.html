@@ -25,19 +25,11 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item me-3">
                         <a class="nav-link text-dark" href="#">Información</a>
-                    </li>
-                    <li class="nav-item me-3">
-                        <a class="nav-link text-dark" href="#">Empresa</a>
-                    </li>
-                    <li class="nav-item me-4">
-                        <a class="nav-link text-dark" href="#">Blog</a>
-                    </li>
-                    <!-- Botón de iniciar sesión -->
+                        <!-- Botón de iniciar sesión -->
                     <li class="nav-item mt-2 me-3">
                         <a class="btn-login" href="#" role="button" data-bs-toggle="modal"
                             data-bs-target="#modalLogin">Iniciar sesión</a>
                     </li>
-
                     <!-- Botón de registrarse -->
                     <li class="nav-item mt-2 me-3">
                         <a class="btn-registrar" href="#" role="button" data-bs-toggle="modal"
@@ -48,10 +40,8 @@
             </div>
         </div>
     </nav>
-    <!-- Fin Navbar -->
 
     <!--Modales de Iniciar Sesion y Registrarse-->
-
     <!-- Modal de Iniciar Sesión -->
     <div class="modal fade" id="modalLogin" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
@@ -72,7 +62,8 @@
                             <label for="password" class="form-label label-modal">Contraseña</label>
                             <input type="password" class="form-control" id="password" placeholder="Contraseña" required>
                         </div>
-                        <button class="btn-modal btn-lg w-100" type="submit" onclick="location.href='index.html'">Iniciar Sesión</button>
+                        <button class="btn-modal btn-lg w-100" type="submit"
+                            onclick="location.href='index.html'">Iniciar Sesión</button>
                         <p class="text-center mt-2 mb-0 fw-bold">O</p>
                         <figure class="d-flex justify-content-center gap-3 mt-2 mb-0">
                             <a href="https://facebook.com" target="_blank" class="a-modal-icon">
@@ -88,12 +79,15 @@
                     </form>
                     <!-- Condiciones -->
                     <p class="text-center mt-0 mb-0 me-3 ms-3 p-2 condiciones">
-                        Si continúas, indicas que aceptas las <a href="" target="_blank" class="a-modal">Condiciones de servicio</a><br> de Vexa y reconoces que
-                        leíste nuestra <a href="" target="_blank" class="a-modal">Política de<br> privacidad</a>. <a href="" target="_blank" class="a-modal">Aviso de recopilación de información.</a>
+                        Si continúas, indicas que aceptas las <a href="" target="_blank" class="a-modal">Condiciones de
+                            servicio</a><br> de Vexa y reconoces que
+                        leíste nuestra <a href="" target="_blank" class="a-modal">Política de<br> privacidad</a>. <a
+                            href="" target="_blank" class="a-modal">Aviso de recopilación de información.</a>
                     </p>
                     <p class="text-center mt-3 mb-0">
-                        <a href="#" class="text-black fw-bold text-decoration-none condiciones" data-bs-toggle="modal" data-bs-target="#modalRegistrar"
-                            data-bs-dismiss="modal">¿Aún no estás en Vexa? Regístrate</a>
+                        <a href="#" class="text-black fw-bold text-decoration-none condiciones" data-bs-toggle="modal"
+                            data-bs-target="#modalRegistrar" data-bs-dismiss="modal">¿Aún no estás en Vexa?
+                            Regístrate</a>
                     </p>
                 </div>
             </div>
@@ -114,7 +108,8 @@
                     <form class="me-5 ms-5 p-3">
                         <div class="mb-2">
                             <label for="username" class="form-label label-modal">Nombre de Usuario</label>
-                            <input type="text" class="form-control" id="username" placeholder="Nombre de usuario" required>
+                            <input type="text" class="form-control" id="username" placeholder="Nombre de usuario"
+                                required>
                         </div>
                         <div class="mb-2">
                             <label for="email" class="form-label label-modal">Correo Electrónico</label>
@@ -125,8 +120,9 @@
                             <input type="password" class="form-control" id="password" placeholder="Contraseña" required>
                         </div>
                         <!-- Botón de registro -->
-                        <button class="btn-modal btn-lg w-100" type="submit" onclick="location.href='index.html'">Registrar</button>
-    
+                        <button class="btn-modal btn-lg w-100" type="submit"
+                            onclick="location.href='index.html'">Registrar</button>
+
                         <p class="text-center mt-2 mb-0 fw-bold">O</p>
                         <figure class="d-flex justify-content-center gap-3 mt-2 mb-0">
                             <a href="https://facebook.com" target="_blank" class="a-modal-icon">
@@ -141,25 +137,65 @@
                         </figure>
                     </form>
                     <p class="text-center mt-0 mb-0 me-3 ms-3 p-2 condiciones">
-                        Si continúas, indicas que aceptas las 
+                        Si continúas, indicas que aceptas las
                         <a href="#" target="_blank" class="a-modal">Condiciones de servicio</a> de Vexa y reconoces que
-                        leíste nuestra <a href="#" target="_blank" class="a-modal">Política de privacidad</a>. 
+                        leíste nuestra <a href="#" target="_blank" class="a-modal">Política de privacidad</a>.
                         <a href="#" target="_blank" class="a-modal">Aviso de recopilación de información.</a>
                     </p>
                     <p class="text-center mt-3 mb-0">
-                        <a href="#" class="text-black fw-bold text-decoration-none condiciones" data-bs-toggle="modal" data-bs-target="#modalLogin"
-                            data-bs-dismiss="modal">¿Ya tienes una cuenta? Inicia sesión</a>
+                        <a href="#" class="text-black fw-bold text-decoration-none condiciones" data-bs-toggle="modal"
+                            data-bs-target="#modalLogin" data-bs-dismiss="modal">¿Ya tienes una cuenta? Inicia
+                            sesión</a>
                     </p>
                 </div>
             </div>
         </div>
     </div>
-    
-    <main class="main d-flex flex-column align-items-center justify-content-center">
-        <h1 class="text-center mb-4">Bienvenido a VEXA</h1>
-        <p class="text-center mb-4">La plataforma que te ayuda a gestionar tus proyectos de manera eficiente.</p>
+
+    <!-- Main -->
+    <main class="main d-flex flex-column align-items-center justify-content-center text-center px-3 py-5">
+
+        <!-- Imágenes decorativas de fondo -->
+        <div class="fondos-vexa">
+            <img src="../Recursos/Iconos/objetivos.png" class="bg-img bg1" alt="">
+            <img src="../Recursos/Iconos/diseñoResponsive.png" class="bg-img bg2" alt="">
+        </div>
+
+        <div class="mt-5 mb-4">
+            <div class="titulo fw-bold mb-2">
+                Inspírate
+            </div>
+            <div class="titulo fw-bold mb-2">
+                Luego, da los primeros pasos
+            </div>
+            <div class="titulo fw-bold mb-5 d-flex align-items-center justify-content-center flex-wrap gap-2">
+                Todo con<img src="../Recursos/Img/LogoSolo.png" alt="Logo Vexa" class="logo-vexa mx-2">Vexa
+            </div>
+        </div>
+
+        <div class="info d-flex flex-column align-items-center justify-content-center">
+            <div class="seccion-acerca fw-bold text-start w-75 mb-3">Acerca de Vexa</div>
+            <div class="descripcion w-75 text-start">
+                Vexa es una plataforma digital de gestión de tareas<br> creada para ayudarte a enfocarte en lo
+                importante
+                Con <br>una experiencia clara, intuitiva y flexible, simplifica tu día<br> a día. Lanzada en 2025, su misión es
+                reducir el estrés y aumentar la productividad, equilibrando lo urgente con lo esencial.
+            </div>
+        </div>
     </main>
 
+    <!-- Footer -->
+    <footer class="border-top py-3 px-4 bg-white">
+        <div class="container-fluid">
+            <!-- Parte derecha -->
+            <div class="d-flex justify-content-center mt-3 mt-md-0 texto-footer">
+                <a href="#" class="me-3 text-muted text-decoration-none">Política de privacidad</a>
+                <a href="#" class="me-3 text-muted text-decoration-none">Términos del servicio</a>
+                <span class="me-3 text-muted">© vexa 2025 <img src="../Recursos/Img/LogoSolo.png" alt="Logo"
+                        class="img-fluid" style="width: 19px; opacity: 0.75; margin-bottom: 3.2px;"></span>
+            </div>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 

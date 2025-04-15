@@ -68,6 +68,72 @@ h1 {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0,0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
+/*Main*/
+
+.titulo {
+    color: black;
+    font-size: 65px;
+    line-height: 1.2;
+    font-weight: 900;
+}
+
+.emoji {
+    font-size: 1.5rem;
+}
+
+.logo-vexa {
+    width: 57px;
+    height: 57px;
+    object-fit: contain;
+}
+
+.info {
+    width: 80%;
+    margin-bottom: 100px;
+}
+
+.seccion-acerca {
+    font-size: 12px;
+    color: #000000;
+    letter-spacing: 0.5px;
+}
+
+.descripcion {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.25;
+    color: #000000;
+}
+
+/*Imagenes del main*/
+
+.fondos-vexa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -100; 
+    pointer-events: none; 
+  }
+  
+  .bg-img {
+    position: absolute;
+    opacity: 0.6;
+    max-width: 400px;
+  }
+  
+  .bg1 {
+    top: 10%;
+    left: 2%;
+    transform: rotate(-15deg);
+  }
+  
+  .bg2 {
+    bottom: 10%;
+    right: 2%;
+    transform: rotate(15deg);
+  }
 
 /*---------Modales-----------*/
 .modal-redondeado {
@@ -84,7 +150,7 @@ h1 {
     letter-spacing: -1.1px;
 }
 
-.form{
+.form {
     padding: 20px;
 }
 
@@ -104,20 +170,20 @@ h1 {
     border-color: #3f3e3e;
 }
 
-.condiciones{
+.condiciones {
     font-weight: lighter;
     font-size: 12px;
     color: #6e6e6e;
     text-align: center;
 }
 
-.btn-modal{
+.btn-modal {
     font-weight: bold;
     background-color: #478971;
     color: #FFFFFF;
     padding: 10px 15px;
     font-size: 16px;
-    text-decoration: none;  
+    text-decoration: none;
     border-radius: 25px;
     border: none;
 }
@@ -127,12 +193,12 @@ h1 {
     text-decoration: none;
 }
 
-.a-modal{
+.a-modal {
     text-decoration: underline;
     color: #6e6e6e;
 }
 
-.a-modal:hover{
+.a-modal:hover {
     text-decoration: none;
     color: #6e6e6e;
 }
@@ -140,12 +206,12 @@ h1 {
 .icono {
     color: #2C69B8;
     font-size: 30px;
-  }
+}
 
 .a-modal-icon:hover .icono {
-    color: #1a4a85; 
+    color: #1a4a85;
 }
-  
+
 
 
 @media (max-width: 991px) {
@@ -208,6 +274,43 @@ h1 {
         border-radius: 0%;
         color: #f7f7f7;
         text-decoration: none;
+    }
+
+    /*Main*/
+
+    .titulo {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .descripcion {
+        font-size: 24px;
+        line-height: 1.4;
+        text-align: center;
+    }
+
+    .seccion-acerca {
+        font-size: 11px;
+        text-align: center;
+    }
+
+    .logo-vexa {
+        width: 40px;
+        height: 40px;
+    }
+
+    .info {
+        width: 90%;
+    }
+
+    /*Imagenes del main*/
+    .bg-img {
+        opacity: 0;
+    }
+
+    /*Footer*/
+    .texto-footer {
+        font-size: 12px !important; 
     }
 
 }
