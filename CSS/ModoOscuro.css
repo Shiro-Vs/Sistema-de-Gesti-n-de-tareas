@@ -31,6 +31,7 @@ body.modo-oscuro {
     background-color: rgba(255, 255, 255, 0.3);
   }
   
+  /*Barra de busqueda*/
   body.modo-oscuro .barra-busqueda {
     background-color: #1E1E1E;
   }
@@ -50,6 +51,7 @@ body.modo-oscuro {
     background-color: #44444438;
   }
   
+  /*MiniPerfil*/
   body.modo-oscuro .card {
     background-color: #2c2c2c;
     color: white;
