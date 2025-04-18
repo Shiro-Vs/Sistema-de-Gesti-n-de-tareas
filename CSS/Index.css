@@ -365,7 +365,6 @@ body {
     top: 40%;
     left: -335%;
     width: 400%;
-    z-index: 999;
   }
 
   .img-perfil {
@@ -381,6 +380,7 @@ body {
   .menu-contenedor {
     width: 100%;
     border-radius: 15px;
+    z-index: 999;
   }
 
   /*Modales*/
