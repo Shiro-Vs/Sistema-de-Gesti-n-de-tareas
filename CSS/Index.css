@@ -365,6 +365,7 @@ body {
     top: 40%;
     left: -335%;
     width: 400%;
+    z-index: 999;
   }
 
   .img-perfil {
