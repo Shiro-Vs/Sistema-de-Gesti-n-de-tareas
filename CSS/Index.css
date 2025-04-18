@@ -357,6 +357,7 @@ body {
   .perfil {
     top: 77px;
     right: 15px;
+    z-index: 1050;
   }
 
   .opcion-menu {
@@ -382,6 +383,7 @@ body {
   .menu-contenedor {
     width: 100%;
     border-radius: 15px;
+    z-index: 1050;
   }
 
   /*Modales*/
