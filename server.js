@@ -10,6 +10,7 @@ app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "HTML/inicio.html"));
 });
 
+
 app.listen(PORT, () => {
   console.log(`Servidor escuchando en el puerto ${PORT}`);
 });
